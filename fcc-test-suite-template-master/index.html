@@ -6,14 +6,19 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
       #nav-bar {
-        position: top; 
+        position: fixed; 
+        top: 0; left: 0; width:100%;
       }
       @media(max-width:590px){
         body {
           font-size:75%;
         }
-
       }
+      .flex{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        align-content: center;   }
     </style>
   </head>
 
@@ -24,7 +29,7 @@
     -->
     <h4>Hello World, we are software developers!</h4>
     <script  src="js/index.js"></script>
-
+<div class="flex">
     <header id = "header"> 
       <img alt="Company's logo" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.demilked.com%2Fmagazine%2Fwp-content%2Fuploads%2F2020%2F06%2Fartist-recreates-famous-logos-de2s-fb54-png__700.jpg&imgrefurl=https%3A%2F%2Fwww.demilked.com%2Ffamous-logo-redesigns-de2s%2F&tbnid=YHDB968Ic3188M&vet=12ahUKEwi3vrP4kfrrAhVIXxoKHTMsB-wQMygSegUIARDxAQ..i&docid=dI3S5CMAmzEfWM&w=700&h=368&q=famous%20logos&ved=2ahUKEwi3vrP4kfrrAhVIXxoKHTMsB-wQMygSegUIARDxAQ" id="header-img">
       <nav id="nav-bar">
@@ -52,6 +57,6 @@
     <input type="email" id="email" name="email" placeholder="enter email" required>
     <a href="https://www.freecodecamp.com/email-submit)"><input type="submit" value="Submit" id="submit"> </a>
   </form>
-
+</div>
   </body>
 </html>
